@@ -196,7 +196,8 @@ namespace CairoDesktop.Common.Localization
             { "sSettings_MenuBar_EnableCairoMenuHotKey", "Enable Cairo menu hotkey:" },
             { "sSettings_MenuBar_EnableMenuBarBlur", "Blur behind the menu bar" },
             { "sSettings_MenuBar_EnableMenuBarMultiMon", "Show menu bar on multiple monitors" },
-            { "sSettings_MenuBar_ShowHibernate", "Show Hibernate option in Cairo menu" },
+            { "sSettings_MenuBar_ShowHibernate", "Show Hibernate option in the Cairo menu" },
+            { "sSettings_MenuBar_ShowStacksRemovableDrives", "Show removable drives" },
             { "sSettings_MenuBar_ProgramsMenuLayout", "Programs menu layout:" },
             { "sSettings_MenuBar_ProgramsMenuLayoutRight", "Tabs on right" },
             { "sSettings_MenuBar_ProgramsMenuLayoutLeft", "Tabs on left" },
@@ -305,6 +306,8 @@ namespace CairoDesktop.Common.Localization
             { "sCommand_OpenLocation", "Open Location" },
             { "sCommand_OpenDesktopOverlay", "Open Desktop Overlay" },
             { "sCommand_CloseDesktopOverlay", "Close Desktop Overlay" },
+            { "sCommand_AddToPrograms", "Add to programs menu" },
+            { "sCommand_AddToQuickLaunch", "Add to quick launch" },
         };
 
         public static Dictionary<string, string> pt_BR = new Dictionary<string, string>
