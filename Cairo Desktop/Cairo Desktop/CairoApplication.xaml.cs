@@ -16,6 +16,9 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using CairoDesktop.Infrastructure.Options;
 using CairoDesktop.Infrastructure.Services;
+#if !DEBUG
+using ManagedShell.Common.SupportingClasses;
+#endif
 // Required for StartupRunner; excluded from debug builds
 using Microsoft.Extensions.Options; // Required for StartupRunner; excluded from debug builds
 

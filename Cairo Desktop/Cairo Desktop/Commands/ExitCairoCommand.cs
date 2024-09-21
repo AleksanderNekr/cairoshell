@@ -4,6 +4,9 @@ using CairoDesktop.Common;
 using CairoDesktop.Common.Localization;
 // This using is required when running as release
 using System.Collections.Generic;
+#if !DEBUG
+using ManagedShell.Common.Helpers;
+#endif
 
 namespace CairoDesktop.Commands
 {
