@@ -31,7 +31,7 @@ namespace CairoDesktop.MenuBarExtensions
                 new VolumeMenuBarExtension(_settings),
                 new ActionCenterMenuBarExtension(_settings),
                 new ClockMenuBarExtension(_commandService, _settings),
-                new LangMenuBarExtension(_commandService, _settings),
+                new LangMenuBarExtension(),
                 new SearchMenuBarExtension(_cairoApplication, _settings));
 
             MenuExtras.AddTo(_cairoApplication.MenuBarExtensions);
