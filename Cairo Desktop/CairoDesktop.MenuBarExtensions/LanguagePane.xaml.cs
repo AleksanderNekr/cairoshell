@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Windows.Controls;
 using System.Windows.Threading;
 using ManagedShell.Common.Helpers;
 
 namespace CairoDesktop.MenuBarExtensions
 {
-    internal sealed partial class LanguagePane
+    internal sealed partial class LanguagePane : UserControl
     {
         public LanguagePane()
         {
