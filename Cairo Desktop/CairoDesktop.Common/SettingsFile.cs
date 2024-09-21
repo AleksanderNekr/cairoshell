@@ -1,5 +1,4 @@
-﻿using ManagedShell.Common.Helpers;
-using ManagedShell.Common.Logging;
+﻿using ManagedShell.Common.Logging;
 using System;
 using System.ComponentModel;
 using System.IO;

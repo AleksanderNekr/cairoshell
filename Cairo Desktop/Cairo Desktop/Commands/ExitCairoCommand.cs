@@ -2,8 +2,11 @@
 using CairoDesktop.Application.Structs;
 using CairoDesktop.Common;
 using CairoDesktop.Common.Localization;
-using ManagedShell.Common.Helpers; // This using is required when running as release
+// This using is required when running as release
 using System.Collections.Generic;
+#if !DEBUG
+using ManagedShell.Common.Helpers;
+#endif
 
 namespace CairoDesktop.Commands
 {

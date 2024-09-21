@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CairoDesktop.Application.Interfaces
+﻿namespace CairoDesktop.Application.Interfaces
 {
     public interface ICairoCommand
     {
