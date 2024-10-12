@@ -5,7 +5,8 @@
 - Centered clock with JetBrains Mono font
 - Allow menu bar with standard windows taskbar
 - Decreased menu bar height to 19px
-- Decreased left and right menu bar margins
+- Decreased left and right menu bar margins\
+- Keyboard languagge indicator
 
 ![Cairo Desktop Environment](https://github.com/user-attachments/assets/3e19d310-cfaf-42aa-b761-0dc2e22ee144)
 
