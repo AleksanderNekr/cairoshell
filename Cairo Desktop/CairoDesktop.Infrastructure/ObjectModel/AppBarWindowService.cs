@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using CairoDesktop.Application.Interfaces;
 using CairoDesktop.Common;
@@ -28,6 +29,7 @@ namespace CairoDesktop.Infrastructure.ObjectModel
             _settings = settings;
 
             _settings.PropertyChanged += Settings_PropertyChanged;
+            _windowManager.TaskbarCreated += WindowManager_TaskbarCreated;
         }
 
         public void Register()
@@ -38,6 +40,10 @@ namespace CairoDesktop.Infrastructure.ObjectModel
         public virtual void Dispose()
         {
             _settings.PropertyChanged -= Settings_PropertyChanged;
+            if (_windowManager != null)
+            {
+                _windowManager.TaskbarCreated -= WindowManager_TaskbarCreated;
+            }
         }
 
         private void Settings_PropertyChanged(object sender, PropertyChangedEventArgs e)
@@ -47,9 +53,16 @@ namespace CairoDesktop.Infrastructure.ObjectModel
             HandleSettingChange(e.PropertyName);
         }
 
+        private void WindowManager_TaskbarCreated(object sender, EventArgs e)
+        {
+            if (!EnableService) return;
+            HandleEnableServiceChanged(false);
+            HandleEnableServiceChanged(true);
+        }
+
         public void HandleScreenAdded(AppBarScreen screen)
         {
-            if (EnableService && (EnableMultiMon || screen.Primary))
+            if (EnableService && (EnableMultiMon || (screen.Primary && Windows.Count < 1)))
             {
                 OpenWindow(screen);
             }
