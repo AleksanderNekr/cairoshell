@@ -476,8 +476,6 @@ namespace CairoDesktop.Common.Localization
 
         public static string sSettings_MenuBar_EnableNotificationArea => getString();
 
-        public static string sSettings_MenuBar_NotificationAreaTaskbarWarning => getString();
-
         public static string sSettings_MenuBar_ShowNotifyIcons => getString();
 
         public static string sSettings_MenuBar_ShowNotifyIconsCollapsed => getString();
@@ -491,6 +489,8 @@ namespace CairoDesktop.Common.Localization
         public static string sSettings_MenuBar_NotificationAreaPinHelp => getString();
 
         public static string sSettings_MenuBar_EnableCairoMenuHotKey => getString();
+
+        public static string sSettings_MenuBar_EnableWinKey => getString();
 
         public static string sSettings_MenuBar_EnableMenuBarBlur => getString();
 

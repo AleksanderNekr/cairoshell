@@ -70,11 +70,11 @@ namespace CairoDesktop
             loadDesktopBackgroundSettings();
             loadHotKeys();
             loadLoggingLevels();
-            loadNotficationSettings();
+            loadNotificationSettings();
+            loadShellDependentSettings();
             loadVersionDependentSettings();
 
             checkUpdateConfig();
-            checkTrayStatus();
             checkRunAtLogOn();
             checkIfCanHibernate();
 
@@ -346,7 +346,7 @@ namespace CairoDesktop
             }
         }
 
-        private void loadNotficationSettings()
+        private void loadNotificationSettings()
         {
             if (_settings.EnableSysTray)
             {
@@ -374,6 +374,14 @@ namespace CairoDesktop
             else if (EnvironmentHelper.IsWindows10OrBetter && EnvironmentHelper.IsAppRunningAsShell)
             {
                 chkEnableMenuExtraActionCenter.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void loadShellDependentSettings()
+        {
+            if (EnvironmentHelper.IsAppRunningAsShell)
+            {
+                chkEnableWinKey.Visibility = Visibility.Visible;
             }
         }
 
@@ -544,15 +552,6 @@ namespace CairoDesktop
             else
             {
                 chkEnableAutoUpdates.Visibility = Visibility.Collapsed;
-            }
-        }
-
-        private void checkTrayStatus()
-        {
-            if (!_settings.EnableTaskbar && !EnvironmentHelper.IsAppRunningAsShell)
-            {
-                // if taskbar is disabled and we aren't running as shell, then Explorer tray is visible. Show warning.
-                lblTrayTaskbarWarning.Visibility = Visibility.Visible;
             }
         }
 
