@@ -67,6 +67,7 @@ RequestExecutionLevel Admin
 
 !insertmacro MUI_LANGUAGE "English"
 !insertmacro MUI_LANGUAGE "French"
+!insertmacro MUI_LANGUAGE "Slovenian"
 
 ;--------------------------------
 ; Initialization
@@ -180,6 +181,35 @@ SectionEnd
   LangString DESC_cairo ${LANG_FRENCH} "Installer Cairo et ses composants requis."
   LangString DESC_startupCU ${LANG_FRENCH} "Démarrer Cairo lorsque vous vous connectez."
   LangString DESC_shellCU ${LANG_FRENCH} "Lancer Cairo au lieu de l'Explorateur Windows. Notez que cela désactive également de nombreuses fonctionnalités nouvelles dans Windows."
+  
+  LangString PAGE_Welcome_Text_net471 ${LANG_SLOVENIAN} "Ta namestitveni program vas bo vodil skozi namestitev programa Cairo.\r\n\r\nPred namestitvijo se prepričajte, da imate nameščen .NET Framework 4.7.1 ali novejši ter da je morebitna zagnana instanca programa Cairo ustavljena.\r\n\r\nKliknite Naprej za nadaljevanje."
+  LangString PAGE_Welcome_Text_net6.0-windows ${LANG_SLOVENIAN} "Ta namestitveni program vas bo vodil skozi namestitev programa Cairo.\r\n\r\nPred namestitvijo se prepričajte, da je morebitna zagnana instanca programa Cairo ustavljena.\r\n\r\nKliknite Naprej za nadaljevanje."
+  LangString PAGE_Finish_RunText ${LANG_SLOVENIAN} "Zaženi Cairo namizno okolje"
+  LangString PAGE_UnDir_TopText ${LANG_SLOVENIAN} "Pred odstranitvijo se prepričajte, da je program Cairo zaprt, da zagotovite odstranitev vseh datotek. Vse datoteke v spodnji mapi bodo odstranjene."
+  LangString DLOG_RunningText ${LANG_SLOVENIAN} "Program Cairo je trenutno zagnan. Zaprite ga v meniju Cairo in znova zaženite ta namestitveni program."
+  LangString DLOG_RunningText2 ${LANG_SLOVENIAN} "Program Cairo je trenutno zagnan. Zaprite ga v meniju Cairo."
+  LangString DLOG_DotNetText ${LANG_SLOVENIAN} "Program Cairo zahteva Microsoft .NET Framework 4.7.1 ali novejši. Namestite ga s spletne strani Microsoft in nato znova namestite program Cairo."
+  LangString SECT_cairo ${LANG_SLOVENIAN} "Cairo namizje (obvezno)"
+  LangString SECT_startupCU ${LANG_SLOVENIAN} "Zaženi ob zagonu (trenutni uporabnik)"
+  LangString SECT_shellCU ${LANG_SLOVENIAN} "Napredno: Onemogoči Explorer (trenutni uporabnik)"
+  LangString DESC_cairo ${LANG_SLOVENIAN} "Namesti Cairo in potrebne komponente."
+  LangString DESC_startupCU ${LANG_SLOVENIAN} "Nastavi, da se Cairo samodejno zažene ob prijavi."
+  LangString DESC_shellCU ${LANG_SLOVENIAN} "Zažene Cairo namesto Windows Explorerja. Opomba: to onemogoči aplikacije UWP/Windows Store in druge funkcije sistema Windows, ki uporabljajo to tehnologijo."
+
+
+ LangString PAGE_Welcome_Text_net471 ${LANG_NORWEGIAN} "Denne installasjonsveiviseren hjelper deg med å installere Cairo.\r\n\r\nFør installasjon, sørg for at .NET Framework 4.7.1 eller nyere er installert, og at alle kjørende Cairo-prosesser er avsluttet.\r\n\r\nKlikk Neste for å fortsette."
+LangString PAGE_Welcome_Text_net6.0-windows ${LANG_NORWEGIAN} "Denne installasjonsveiviseren hjelper deg med å installere Cairo.\r\n\r\nFør installasjon, sørg for at alle kjørende Cairo-prosesser er avsluttet.\r\n\r\nKlikk Neste for å fortsette."
+LangString PAGE_Finish_RunText ${LANG_NORWEGIAN} "Start Cairo Desktop-miljø"
+LangString PAGE_UnDir_TopText ${LANG_NORWEGIAN} "Vennligst sørg for at Cairo er avsluttet før du avinstallerer, for å sikre at alle filer fjernes. Alle filer i katalogen nedenfor vil bli slettet."
+LangString DLOG_RunningText ${LANG_NORWEGIAN} "Cairo kjører for øyeblikket. Lukk Cairo fra Cairo-menyen og kjør installasjonsprogrammet igjen."
+LangString DLOG_RunningText2 ${LANG_NORWEGIAN} "Cairo kjører for øyeblikket. Lukk Cairo fra Cairo-menyen."
+LangString DLOG_DotNetText ${LANG_NORWEGIAN} "Cairo krever Microsoft .NET Framework 4.7.1 eller nyere. Installer dette fra Microsofts nettside og prøv igjen."
+LangString SECT_cairo ${LANG_NORWEGIAN} "Cairo Desktop (påkrevd)"
+LangString SECT_startupCU ${LANG_NORWEGIAN} "Start ved oppstart (gjeldende bruker)"
+LangString SECT_shellCU ${LANG_NORWEGIAN} "Avansert: Deaktiver Explorer (gjeldende bruker)"
+LangString DESC_cairo ${LANG_NORWEGIAN} "Installerer Cairo og nødvendige komponenter."
+LangString DESC_startupCU ${LANG_NORWEGIAN} "Starter Cairo automatisk når du logger inn."
+LangString DESC_shellCU ${LANG_NORWEGIAN} "Kjører Cairo i stedet for Windows Utforsker. Merk: dette deaktiverer også UWP/Windows Store-apper og andre funksjoner som bruker denne teknologien."
 
   ;Assign language strings to sections
   !insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
