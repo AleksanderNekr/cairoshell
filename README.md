@@ -10,7 +10,6 @@
 
 ![Cairo Desktop Environment](https://github.com/user-attachments/assets/3e19d310-cfaf-42aa-b761-0dc2e22ee144)
 
-
 ## A customizable, intuitive desktop environment for Windows.
 Cairo is a desktop environment for Windows. Our goal is to develop a desktop experience that increases productivity and advances current technology standards. With a focus on stability, performance, and productivity, Cairo aims to deliver an interface that exceeds expectations and delivers superior ease of use.
 
